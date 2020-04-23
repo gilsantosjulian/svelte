@@ -1,5 +1,11 @@
 <script>
   let someText = `Frontend Developer at Platzi`;
+  let count = 0;
+
+  function handleClick () {
+    count += 1;
+  }
+
 </script>
 
 <style>
@@ -10,7 +16,6 @@
 </style>
 
 <div class='About'>
-  <p>
-    {someText}
-  </p>
+  <p>{someText}</p>
+  <button on:click={handleClick}>Click {count === 0 ? '' : count} </button>
 </div>
