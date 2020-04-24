@@ -23,7 +23,16 @@
 
 	/* Applying variables */
 	:global(:root) {
-		--theme-color: purple;
+		--theme-light: #f2eee2;
+		--theme-dark: #121212;
+		--primary: #4bb2f9;
+		--secondary: #007c89;
+	}
+
+	/* Applying darkMode */
+	:global(body.dark-mode) {
+		background-color: #121212;
+		color: #bfc2c7;
 	}
 
 	main {
