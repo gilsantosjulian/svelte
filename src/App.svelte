@@ -3,6 +3,7 @@
 	import Text from './components/Text.svelte';
 	import Person from './components/Person.svelte';
 	import Skills from './components/Skills.svelte';
+	import Input from './components/Input.svelte';
 	export let name;
 	export let lastName;
 	let sveleteLogo = 'https://arepa.s3.amazonaws.com/svelte-logo.png'
@@ -68,5 +69,6 @@
 	<Text />
 	<Person {...data} />
 	<Skills />
+	<Input />
 	<img src={sveleteLogo} alt='Svelte' />
 </main>
